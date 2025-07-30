@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chartwell Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/cp.png">
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+  <div class="logo">
+    <span style="color:#0071e3; font-weight:bold;">Chartwell</span><span style="color:#002e6d;">Partners</span>
+  </div>
+<div class="hamburger" onclick="openSlideMenu()">☰</div>
+
+
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="#">OUR FIRM</a></li>
+
+    <li class="dropdown">
+      <a href="#">EXPERTISE ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Biopharmaceuticals</a></li>
+        <li><a href="#">Financial Services</a></li>
+        <li><a href="#">Real Estate</a></li>
+        <li class="has-submenu">
+          <a href="#">More Expertise ▸</a>
+          <ul class="submenu">
+            <li><a href="#">Healthcare</a></li>
+            <li><a href="#">Technology</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="#">SERVICES ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Executive Search</a></li>
+        <li><a href="#">Board Services</a></li>
+        <li><a href="#">Leadership Advisory</a></li>
+      </ul>
+    </li>
+
+    <li class="search-icon"><a href="#" onclick="toggleSearch(event)">🔍</a></li>
+    <li id="search-bar" style="display: none;">
+      <input type="text" placeholder="Search..." class="search-input">
+    </li>
+    <li><a href="#" class="contact-btn" onclick="openModal()">CONTACT US</a></li>
+  </ul>
+</nav>
+
+</header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>A retained executive search<br>firm dedicated to identifying</h1>
+    </div>
+    
+    <div class="scroll-down-btn" onclick="scrollToNext()">
+  <span>↓</span>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <!-- Bottom Services Links -->
+<section class="bottom-services">
+  <div class="services-links">
+    <a href="#">Executive Search</a>
+    <span>|</span>
+    <a href="#">Board Services</a>
+    <span>|</span>
+    <a href="#">Leadership Advisory</a>
+  </div>
+</section>
+<!-- Industry Expertise Section -->
+<section class="industry-expertise">
+  <div class="container">
+    <h2>Industry Expertise</h2>
+    <p>With extensive training as senior partners of the largest global search firms, we apply our in-depth industry knowledge to exceed our clients' expectations.</p>
+    <button class="meet-btn">MEET THE FIRM</button>
+
+    <div class="expertise-grid">
+      <!-- Biopharmaceuticals -->
+      <div class="expertise-card">
+        <div class="icon">🔬</div>
+        <h3>Biopharmaceuticals</h3>
+        <ul>
+          <li>→ Stealth Mode Companies</li>
+          <li>→ Private to Public</li>
+          <li>→ R&D to Commercial</li>
+          <li>→ Investors</li>
+        </ul>
+        <a href="#" class="see-more">See more &gt;</a>
+
+      </div>
+
+      <!-- Financial Services -->
+      <div class="expertise-card">
+        <div class="icon">💰</div>
+        <h3>Financial Services</h3>
+        <ul>
+          <li>→ Commercial, Community and Private Banking</li>
+          <li>→ Mortgage</li>
+          <li>→ Wealth Management</li>
+          <li>→ Fintech</li>
+        </ul>
+        <a href="#" class="see-more">See more &gt;</a>
+
+      </div>
+
+      <!-- Real Estate -->
+      <div class="expertise-card">
+        <div class="icon">🏢</div>
+        <h3>Real Estate</h3>
+        <ul>
+          <li>→ Homebuilders</li>
+          <li>→ Single Family Rental</li>
+          <li>→ Private</li>
+          <li>→ Institutional</li>
+        </ul>
+        <a href="#" class="see-more">See more &gt;</a>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section class="team-section hidden" id="our-team">
+  <div class="container">
+    <h2>Our Team</h2>
+    <div class="team-grid">
+      <!-- Repeat for each team member -->
+      <div class="team-member">
+        <img src="images/AB-headshot-Jan-23_Retouched-resized.jpg" alt="Team Member">
+        <h3>Amy Bottoms</h3>
+        <p>Biopharmaceuticals</p>
+         <a href="#" class="view-profile">View Profile</a>
+      </div>
+      <div class="team-member">
+        <img src="images/Sara_Hagar.jpg" alt="Team Member">
+        <h3>Sara S.Hagar</h3>
+        <p>Biopharmaceuticals</p>
+         <a href="#" class="view-profile">View Profile</a>
+      </div>
+      <div class="team-member">
+        <img src="images/CWP-Photos-SeanOneal-Opt.jpg" alt="Team Member">
+        <h3>Sean O’Neal</h3>
+        <p>Financial Services / Real Estate</p>
+         <a href="#" class="view-profile">View Profile</a>
+      </div>
+      <div class="team-member">
+        <img src="images/Petty-Scott-e1665011450760.jpg" alt="Team Member">
+        <h3>J. Scott Petty</h3>
+        <p>Financial Services / Real Estate</p>
+         <a href="#" class="view-profile">View Profile</a>
+      </div>
+      <div class="team-member">
+        <img src="images/Ellen-Travers-scaled-e1665500158327.jpg" alt="Team Member">
+        <h3>Ellen Travers</h3>
+        <p>Biopharmaceuticals / Healthchare</p>
+         <a href="#" class="view-profile">View Profile</a>
+      </div>
+      <div class="team-member">
+        <img src="images/julie_bell.jpg" alt="Team Member">
+        <h3>Julie Bell, PhD</h3>
+        <p>Leadership Advisory</p>
+         <a href="#" class="view-profile">View Profile</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Fullscreen Side Menu -->
+<div id="fullScreenMenu" class="overlay-menu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeFullScreenMenu()">×</a>
+
+  <div class="overlay-content">
+    
+    <a href="#">Our Firm <span class="arrow">›</span></a>
+
+    <h3>EXPERTISE</h3>
+    <a href="#">Biopharmaceuticals <span class="arrow">›</span></a>
+    <a href="#">Financial Services <span class="arrow">›</span></a>
+    <a href="#">Real Estate <span class="arrow">›</span></a>
+
+    <h3>SERVICES</h3>
+    <a href="#">Executive Search <span class="arrow">›</span></a>
+    <a href="#">Board Services <span class="arrow">›</span></a>
+    <a href="#">Leadership Advisory <span class="arrow">›</span></a>
+
+    <div class="contact-btn-container">
+      <a href="#contact" class="contact-btn">Contact</a>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Why Companies Trust Us Section -->
+  <section class="trust-section">
+    <div class="container">
+      <h2>Why Companies Trust Us</h2>
+      <div class="trust-content">
+        <div class="trust-text">
+          <p>Our cohesive, dedicated team of professionals has worked together for close to 20 years with a singular focus on delivering exceptional leaders to our executive search clients. Our clients repeatedly retain our proven research, recruitment, and onboarding expertise to build their companies. As evidenced by more than 70% of our work from repeat clients, our client partnerships are the cornerstone of what we do.</p>
+          
+          <div class="trust-values">
+            <div class="value-item">
+              <h3>Excellence</h3>
+              <p>We take pride in outstanding execution. Leveraging our large firm know-how, we apply a proven, disciplined search process with rigor and enthusiasm.</p>
+            </div>
+            
+            <div class="value-item">
+              <h3>Compassion</h3>
+              <p>We chose this line of work because we enjoy seeing our clients and candidates succeed. We invest deeply in relationships that last, which starts with caring.</p>
+            </div>
+          </div>
+          
+          <div class="trust-values">
+            <div class="value-item">
+              <h3>Integrity</h3>
+              <p>Our reputation is our livelihood. We choose to "think long" and let the golden rule govern our decisions.</p>
+            </div>
+            
+            <div class="value-item">
+              <h3>Candor</h3>
+              <p>We take an advisory approach to our interactions. We provide candid perspective to our clients and candidates, facilitating more successful outcomes.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="trust-stats">
+          <div class="stat-item">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Placements each year</div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-number">70+</div>
+            <div class="stat-label">Percentage of our searches are with repeat clients</div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Years in business</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>Chartwell<span style="color: #fff;">Partners</span></h2>
+        </div>
+        
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>ABOUT</h3>
+            <ul>
+              <li><a href="#">Our Firm</a></li>
+              <a href="#" class="footer-contact-btn" onclick="openModal()">CONTACT US</a>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>EXPERTISE</h3>
+            <ul>
+              <li><a href="#">Biopharmaceuticals</a></li>
+              <li><a href="#">Financial Services</a></li>
+              <li><a href="#">Real Estate</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <div class="footer-description">
+              <p>A retained executive search firm dedicated to identifying exceptional leaders.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <hr class="footer-divider">
+      
+      <div class="footer-bottom">
+        <div class="footer-locations">
+          <div class="location-section">
+            <h4>LOCATIONS</h4>
+          </div>
+          
+          <div class="location-section">
+            <h4>MAIN OFFICE</h4>
+            <div class="office-details">
+              <p>300 Crescent Court</p>
+              <p>Suite 1425</p>
+              <p>Dallas, TX 75201</p>
+              <br>
+              <p>Phone: (214) 269-1900</p>
+            </div>
+          </div>
+          
+          <div class="location-section">
+            <h4>OTHER LOCATIONS</h4>
+            <div class="other-locations">
+              <p>Atlanta</p>
+              <p>New York City</p>
+              <p>Philadelphia</p>
+              <p>San Antonio</p>
+              <p>Seattle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="footer-divider">
+      
+     
+   <div class="footer-controls">
+  <div class="social-links">
+    <a href="https://www.linkedin.com/company/chartwell-partners" target="_blank" class="social-link" title="Chartwell Partners LinkedIn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      </svg>
+    </a>
+    <a href="https://twitter.com/ChartwellUS" target="_blank" class="social-link" title="Chartwell Partners Twitter">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+      </svg>
+    </a>
+  </div>
+  <button class="theme-toggle-btn" onclick="toggleTheme()" id="theme-toggle">
+    🌙 Dark Mode
+  </button>
+</div>
+        <div class="footer-credits">
+  <p>© 2025 All Rights Reserved.</p>
+  <div class="site-credit">
+    <a href="https://tegan.io/" target="_blank" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+      <span>Site by Tegan</span>
+      <div class="tegan-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+          <path d="M8 12l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+    </a>
+  </div>
+</div>
+      </div>
+    </div>
+  </footer>
+
+  
+<button id="backToTop" class="back-to-top" onclick="scrollToTop()">↑</button>
+
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Contact Us </h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+
+</body>
+</html>
